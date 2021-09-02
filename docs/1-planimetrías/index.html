@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>2- Mecanizado CNC - Francisco Matthews - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://franciscomatthews.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://franciscomatthews.github.io"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://franciscomatthews.github.io"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/post-1/">0 - Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/2-mecanizado-cnc/">1- Planimetrías</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://franciscomatthews.github.io/docs/1-planimetr%C3%ADas/">2- Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/3-mecanizado-2.5/">3 - Mecanizado 2.5</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/4-simulaci%C3%B3n-y-dise%C3%B1o-generativo/">4 - Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/5-impresi%C3%B3n-3d/">5 - Impresión 3D</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/6-complementarios/">6 - Complementarios</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/7-biomateriales-para-moldes-i-parte/">7 - Biomateriales para Moldes (I Parte)</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/8-biomateriales-para-moldes-ii-parte/">8 - Biomateriales para Moldes (II Parte)</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/9-preparaci%C3%B3n-molde/">9 - Preparación Molde</a>
+    </li>
+    
+    <li class="">
+      <a href="https://franciscomatthews.github.io/docs/10-ex%C3%A1men-fabricaci%C3%B3n-digital/">Exámen Fabricación Digital</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">2- Mecanizado CNC</h1>
+<div class="content ">
+  <h3 id="qué-es-el-mecanizado-cnc-y-cómo-funciona">¿Qué es el mecanizado CNC y cómo funciona?</h3>
+<p>En el siguiente post, se verá su funcionamiento utilizando como ejemplo la silla Fresia creada en Fusion 360.</p>
+<p>CNC significa control numérico comutarizado, y es un sistema que se creó el año 1952 que permitió crear la primera máquina capaz de trabajar de manera automática, generando un aumento en la producción y en la presición de esta.
+La gracia de esta nueva máquina, es que al ser automática, su trabajo se controla por un ordenador lo que también dsminuye el tiempo de producción.</p>
+<p>Dentro de las máquinas CNC, existen varias como las fresadoras, los tornos, enrutadores, impresoras 3D, cortadoras de plasma, entre otras menos comunes.</p>
+<h6 id="a-continuación-hay-algunas-fotos-de-estas-distintas-máquinas">A continuación hay algunas fotos de estas distintas máquinas.</h6>
+<p><img src="/img/maquinas.jpeg" alt="Imagen Simple"></p>
+<p>La siguiente tabla, por otro lado, que muestra la relación entre ciertos materiales y la velocidad con la que trabaja la máquina cnc, dentro de esta la fresa, que será con la cual se trabajará la silla Fresia más adelante.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Materiales</th>
+<th style="text-align:left">Work Speed</th>
+<th style="text-align:center">Travel Speed</th>
+<th style="text-align:right">RPM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">MDF</td>
+<td style="text-align:left">3000</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">18000</td>
+</tr>
+<tr>
+<td style="text-align:left">Acrilico</td>
+<td style="text-align:left">800</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">12000</td>
+</tr>
+<tr>
+<td style="text-align:left">Terciado</td>
+<td style="text-align:left">3000</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">18000</td>
+</tr>
+<tr>
+<td style="text-align:left">Terciado marino</td>
+<td style="text-align:left">2500</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">18000</td>
+</tr>
+<tr>
+<td style="text-align:left">Raulí</td>
+<td style="text-align:left">2500</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">18000</td>
+</tr>
+<tr>
+<td style="text-align:left">ABS</td>
+<td style="text-align:left">2000</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">9000</td>
+</tr>
+<tr>
+<td style="text-align:left">PAI</td>
+<td style="text-align:left">2000</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">9000</td>
+</tr>
+<tr>
+<td style="text-align:left">Aluminio</td>
+<td style="text-align:left">300</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">15000</td>
+</tr>
+<tr>
+<td style="text-align:left">Bronce</td>
+<td style="text-align:left">300</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">15000</td>
+</tr>
+<tr>
+<td style="text-align:left">Polietileno</td>
+<td style="text-align:left">2500</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">12000</td>
+</tr>
+<tr>
+<td style="text-align:left">Tecnil</td>
+<td style="text-align:left">2500</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">12000</td>
+</tr>
+<tr>
+<td style="text-align:left">Troicel</td>
+<td style="text-align:left">1600</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">9000</td>
+</tr>
+<tr>
+<td style="text-align:left">Bambu</td>
+<td style="text-align:left">1500</td>
+<td style="text-align:center">5000</td>
+<td style="text-align:right">15000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="volver-arribatop"><a href="#top">[Volver Arriba]</a></h2>
+<h3 id="silla-fresia">Silla Fresia</h3>
+<p>Para este caso, se trabajará con la Fresadora. Explicaremos primero los componentes de la silla, luego veremos su trabajo en Fusion 360, y por último se verán fotos del proceso práctico.</p>
+<p>La silla está formada por las siguientes partes:</p>
+<ul>
+<li>Respaldo</li>
+<li>Travesaños (2)</li>
+<li>Largueros (2)</li>
+<li>Asiento</li>
+<li>Patas frontales (2, A y B)</li>
+<li>Patas traseras (2, A y B)</li>
+</ul>
+<h4 id="iframe-en-fusion-360">Iframe en Fusion 360</h4>
+<div>
+    <iframe 
+    src=''
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<h2 id="volver-arribatop-1"><a href="#top">[Volver Arriba]</a></h2>
+<h3 id="desarrollo-armado-silla-fresia-en-fusion-360">Desarrollo armado silla Fresia en Fusion 360</h3>
+<h6 id="paso-1">Paso 1</h6>
+<p>Definir área de trabajo: Plancha de Terciado. (Selección en SKETCH, con visualización en TOP), se selecciona el plano XY para crear un cuadrado de 1220X1220 mm (media plancha de terciado). Copiar las patas de la silla a usar.
+<img src="/img/paso1.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-2">Paso 2</h6>
+<p>Sobre el cuadrado se realiza un EXTRUDE de 15mm hacia arriba, luego con MOVE/COPY se mueve la silla sobre la plancha por capas, cambiándolas al plano horizontal. Para esto se usa el comando ALIGN. (Usar FLIP para que todas las piezas queden en la mirando hacia el mismo lado, es decir con la parte cortada hacia arriba).
+<img src="/img/paso2.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-3">Paso 3</h6>
+<p>Luego se deber ir a DISEÑO&gt;MANUFACTURA, en SETUP se escoge la maquina Autodesk CNC de 3 ejes genérica.</p>
+<h6 id="paso-4">Paso 4</h6>
+<p>En Stock&gt;from solid se selecciona la plancha anteriormente creada y las piezas a cortar. Para esto se debe apagar la plancha y luego en “orientación” clickear en “Select Z axis/plane &amp; X axis”. Luego se prende la plancha y se orienta el área de trabajo con el eje X frente a nosotros y el eje Y hacia el fondo (y Z como altura).</p>
+<p><img src="/img/paso3.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-5">Paso 5</h6>
+<p>Para realizar el 2D contour, se seleccionan las aristas de la base y la herramienta de corte; FRESA de 6mm (flat end mil). Aparecerán unas líneas que indican la trayectoria de la FRESA para realizar el mecanizado. *botón derecho&gt;simular.
+<img src="/img/paso4.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-6">Paso 6</h6>
+<p>Se debe editar la profundidad de la plancha en Contour2D&gt;passes&gt;multiple dephts y se debe cambiar el maximun roughing a 3mm. Ahora la FRESA recortara la plancha en 5 pasos.
+<img src="/img/paso5.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-7">Paso 7</h6>
+<p>Usando el comando 2D POCKET, se vuelve a seleccionar passes&gt;multiple dephts&gt; y cambiar el máximum roughing a 3mm. Esto rebajará el área interna seleccionada.
+<img src="/img/paso6.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-8">Paso 8</h6>
+<p>Luego, para realizar el área externa, se vuelve a seguir la sucesión de pasos indicada en el PASO 6, que indica el trayecto de la herramienta. Finalmente, al terminar quedara la pieza suelta por lo que para evitar que se rompa la plancha se deben ajustar los TABS en width: 6mm ; Height: 3mm ; Distance: 350mm.
+<img src="/img/paso7.jpeg" alt="Imagen Simple"></p>
+<h6 id="paso-9">Paso 9</h6>
+<p>Se hace una simulación final, en la que se mostraran todos los pasos anteriores con la pieza mecanizada.</p>
+<h6 id="paso-10">Paso 10</h6>
+<p>Para los rebajes y generar flexibilidad en el material, a base de recortes. A continuación, creamos un sketch en la cara inferior de nuestra figura. Seleccionamos un rectángulo, para hacer un stock, debe ser de 480mm x 560 mm (apróximadamente, no hay problema con que sea distinto, lo importante es que sea más grande que la figura inicial).</p>
+<h6 id="paso-11">Paso 11</h6>
+<p>Apagamos la capa de la figura 1 y extruimos la figura a 9mm y volvemos a prender la capa de la figura 1, dándole un Opacity Control de 10%. Luego, encendemos los mecanizadores.</p>
+<h6 id="paso-12">Paso 12</h6>
+<p>En manufacture, hacemos set up y elegimos la máquina (Orientation Type: miling, Orientation: select z axis/ plane &amp; X axis, Z axis: Face, X axis: Edge), apretamos 2D contour (multiple depths: máximum 3mm), después, Trace (de 2D), seleccionamos las líneas para que la fresa las siga, con un stock to leave de 4, 5mm. Por último, hacemos la simulación.
+<img src="/img/paso8.jpeg" alt="Imagen Simple"></p>
+<h2 id="volver-arribatop-2"><a href="#top">[Volver Arriba]</a></h2>
+<h3 id="videos">Videos</h3>
+<h4 id="corte-completo">Corte completo</h4>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/cortecompleto.mp4"  type="video/mp4">
+    </video>
+</div>
+<h4 id="corte-zona">Corte zona</h4>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/cortezona.mp4"  type="video/mp4">
+    </video>
+</div>
+<h4 id="corte-asiento">Corte asiento</h4>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/corteasiento.mp4"  type="video/mp4">
+    </video>
+</div>
+<h2 id="volver-arribatop-3"><a href="#top">[Volver Arriba]</a></h2>
+<h4 id="planimtrías-silla-fresia">Planimtrías silla Fresia</h4>
+<p>Las siguientes imágenes muestran la planimetría de la silla Fresia y sus detalles</p>
+<p><img src="/img/chepefco206.png" alt="Imagen Simple">
+<img src="/img/afwhiun%CC%8305.png" alt="Imagen Simple">
+<img src="/img/chepefco02.png" alt="Imagen Simple">
+<img src="/img/chepefco28.png" alt="Imagen Simple">
+<img src="/img/guardare6707.png" alt="Imagen Simple"></p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//1.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//1.jpg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//1.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//10.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//10.jpg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//10.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//11.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//11.jpg" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//11.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//12.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//12.jpg" alt="12th" />
+				    </div>
+			      <figcaption>
+		          <p>12th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//12.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//13.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//13.jpg" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//13.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//14.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//14.jpg" alt="14th" />
+				    </div>
+			      <figcaption>
+		          <p>14th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//14.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//15.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//15.jpg" alt="15th" />
+				    </div>
+			      <figcaption>
+		          <p>15th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//15.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//16.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//16.jpg" alt="16th" />
+				    </div>
+			      <figcaption>
+		          <p>16th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//16.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//17.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//17.jpg" alt="17th" />
+				    </div>
+			      <figcaption>
+		          <p>17th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//17.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//18.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//18.jpg" alt="18th" />
+				    </div>
+			      <figcaption>
+		          <p>18th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//18.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//19.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//19.jpg" alt="19th" />
+				    </div>
+			      <figcaption>
+		          <p>19th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//19.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//2.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//2.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//20.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//20.jpg" alt="20th" />
+				    </div>
+			      <figcaption>
+		          <p>20th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//20.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//21.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//21.jpg" alt="21st" />
+				    </div>
+			      <figcaption>
+		          <p>21st</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//21.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//22.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//22.jpg" alt="22nd" />
+				    </div>
+			      <figcaption>
+		          <p>22nd</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//22.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//23.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//23.jpg" alt="23rd" />
+				    </div>
+			      <figcaption>
+		          <p>23rd</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//23.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//24.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//24.jpg" alt="24th" />
+				    </div>
+			      <figcaption>
+		          <p>24th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//24.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//25.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//25.jpg" alt="25th" />
+				    </div>
+			      <figcaption>
+		          <p>25th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//25.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//26.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//26.jpg" alt="26th" />
+				    </div>
+			      <figcaption>
+		          <p>26th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//26.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//27.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//27.jpg" alt="27th" />
+				    </div>
+			      <figcaption>
+		          <p>27th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//27.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//28.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//28.jpg" alt="28th" />
+				    </div>
+			      <figcaption>
+		          <p>28th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//28.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//29.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//29.jpg" alt="29th" />
+				    </div>
+			      <figcaption>
+		          <p>29th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//3.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//3.jpg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//3.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//30.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//30.jpg" alt="30th" />
+				    </div>
+			      <figcaption>
+		          <p>30th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//30.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//31.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//31.jpg" alt="31st" />
+				    </div>
+			      <figcaption>
+		          <p>31st</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//31.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//32.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//32.jpg" alt="32nd" />
+				    </div>
+			      <figcaption>
+		          <p>32nd</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//32.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//4.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//4.jpg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//4.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//5.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//5.jpg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//5.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//6.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//6.jpg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//6.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//7.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//7.jpg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//7.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//8.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//8.jpg" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//8.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://franciscomatthews.github.io/img/fotoscnc//9.jpg');" >
+				      <img itemprop="thumbnail" src="https://franciscomatthews.github.io/img/fotoscnc//9.jpg" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://franciscomatthews.github.io/img/fotoscnc//9.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
